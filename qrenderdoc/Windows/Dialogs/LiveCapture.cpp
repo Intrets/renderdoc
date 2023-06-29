@@ -826,7 +826,8 @@ bool LiveCapture::checkAllowClose(int totalUnsavedCaptures, bool &noToAll)
 bool LiveCapture::checkAllowClose()
 {
   bool dummy = false;
-  return checkAllowClose(unsavedCaptureCount(), dummy);
+  //return checkAllowClose(unsavedCaptureCount(), dummy);
+  return true;
 }
 
 void LiveCapture::openCapture(Capture *cap)
